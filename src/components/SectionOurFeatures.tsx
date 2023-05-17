@@ -22,7 +22,7 @@ const SectionOurFeatures: FC<SectionOurFeaturesProps> = ({
       data-nc-id="SectionOurFeatures"
     >
       <div className="flex-grow">
-        <Image src={rightImg} alt="" />
+        <Image src={"/Images/luxe-taxi-amstelveen.jpeg"} alt="" width={1024} height={768} />
       </div>
       <div
         className={`max-w-2xl flex-shrink-0 mt-10 lg:mt-0 lg:w-2/5 ${

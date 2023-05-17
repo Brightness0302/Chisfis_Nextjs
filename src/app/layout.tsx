@@ -3,6 +3,8 @@ import "../fonts/line-awesome-1.3.0/css/line-awesome.css";
 // import "../styles/index.scss";
 import "rc-slider/assets/index.css";
 import { Inter } from 'next/font/google'
+import Header from './(client-components)/(Header)/Header';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,8 +19,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={inter.className}>
+      <body className={"bg-white text-base dark:bg-d-background text-neutral-900 dark:text-neutral-200"}>
+        <Header className={"shadow-sm dark:border-b dark:border-neutral-700 m-auto"} navType="MainNav1" />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

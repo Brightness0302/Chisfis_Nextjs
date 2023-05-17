@@ -1,4 +1,4 @@
-import SectionHeroArchivePage from "@/(server-components)/SectionHeroArchivePage";
+import SectionHeroArchivePage from "@/app/(server-components)/SectionHeroArchivePage";
 import BgGlassmorphism from "@/components/BgGlassmorphism";
 import SectionSliderNewCategories from "@/components/SectionSliderNewCategories";
 import SectionSubscribe2 from "@/components/SectionSubscribe2";

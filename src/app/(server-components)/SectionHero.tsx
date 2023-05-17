@@ -27,7 +27,7 @@ const SectionHero: FC<SectionHeroProps> = ({ className = "" }) => {
           </ButtonPrimary>
         </div>
         <div className="flex-grow">
-          <Image className="w-full" src={imagePng} alt="hero" priority />
+          <Image className="w-full" src={"/Images/vip-taxi.jpg"} width={1024} height={768} alt="hero" priority />
         </div>
       </div>
 

@@ -23,7 +23,7 @@ const Header: FC<HeaderProps> = ({ navType = "MainNav1", className = "" }) => {
 
   return (
     <div
-      className={`nc-Header sticky top-0 w-full left-0 right-0 z-40 nc-header-bg ${className}`}
+      className={`nc-Header sticky top-0 w-full left-0 right-0 z-40 nc-header-bg bg-white-1/2 dark:bg-black-1/2 ${className}`}
     >
       {renderNav()}
     </div>

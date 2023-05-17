@@ -22,31 +22,31 @@ const VIDEOS_DEMO: VideoType[] = [
     id: "Ao7e4iisKMs",
     title: "Magical Scotland - 4K Scenic Relaxation Film with Calming Music",
     thumbnail:
-      "https://images.pexels.com/photos/131423/pexels-photo-131423.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "/Images/Bmw-7-Serie-300x225.jpg",
   },
   {
     id: "a5V6gdu5ih8",
     title: "Magical Scotland - 4K Scenic Relaxation Film with Calming Music",
     thumbnail:
-      "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "/Images/Luxe-Mercedes-V-klasse-300x225.webp",
   },
   {
     id: "MuB7HHeuNbc",
     title: "Magical Scotland - 4K Scenic Relaxation Film with Calming Music",
     thumbnail:
-      "https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "/Images/Mercedes-E-klasse-300x225.webp",
   },
   {
     id: "eEaZvEZye84",
     title: "Magical Scotland - 4K Scenic Relaxation Film with Calming Music",
     thumbnail:
-      "https://images.pexels.com/photos/4983184/pexels-photo-4983184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "/Images/Mercedes-S-klasse-300x225.webp",
   },
   {
     id: "EuDJZDaSP0Q",
     title: "Magical Scotland - 4K Scenic Relaxation Film with Calming Music",
     thumbnail:
-      "https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "/Images/Tesla-Model-S-300x225.webp",
   },
 ];
 

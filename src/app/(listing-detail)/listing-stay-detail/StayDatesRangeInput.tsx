@@ -6,7 +6,7 @@ import { CalendarIcon } from "@heroicons/react/24/outline";
 import DatePickerCustomHeaderTwoMonth from "@/components/DatePickerCustomHeaderTwoMonth";
 import DatePickerCustomDay from "@/components/DatePickerCustomDay";
 import DatePicker from "react-datepicker";
-import ClearDataButton from "@/(client-components)/(HeroSearchForm)/ClearDataButton";
+import ClearDataButton from "@/app/(client-components)/(HeroSearchForm)/ClearDataButton";
 
 export interface StayDatesRangeInputProps {
   className?: string;

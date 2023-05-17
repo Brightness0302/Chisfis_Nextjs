@@ -44,18 +44,13 @@ const SectionHowItWork: FC<SectionHowItWorkProps> = ({
 }) => {
   return (
     <div
-      className={`nc-SectionHowItWork  ${className}`}
+      className={`nc-SectionHowItWork ${className}`}
       data-nc-id="SectionHowItWork"
     >
       <Heading isCenter desc="Keep calm & travel on">
         How it work
       </Heading>
       <div className="mt-20 relative grid md:grid-cols-3 gap-20">
-        <Image
-          className="hidden md:block absolute inset-x-0 top-10"
-          src={VectorImg}
-          alt=""
-        />
         {data.map((item) => (
           <div
             key={item.id}

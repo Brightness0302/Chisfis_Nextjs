@@ -54,7 +54,7 @@ const SectionSubscribe2: FC<SectionSubscribe2Props> = ({ className = "" }) => {
         </form>
       </div>
       <div className="flex-grow">
-        <Image alt="" src={rightImg} />
+        <Image alt="" src={"/Images/deluxe-enter-cab-1024x678.webp"} width={1024} height={768} />
       </div>
     </div>
   );

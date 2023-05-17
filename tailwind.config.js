@@ -31,6 +31,16 @@ module.exports = {
       },
       colors: {
         "cornflowerblue":"cornflowerblue", 
+        "aliceblue":"aliceblue", 
+        "antiquewhite":"antiquewhite", 
+        "beige":"beige",
+        "wheat":"wheat",
+        "thistle":"thistle",
+        "cadetblue":"cadetblue",
+        "slategrey":"slategrey",
+        "white-1/2":"hsla(0,0%,100%,.7)",
+        "black-1/2":"hsla(0,0%,20%,.7)",
+        "d-background":"#111827"
       },
     },
   },

@@ -7,7 +7,7 @@ const megaMenuDemo: MegamenuItem[] = [
   {
     id: ncNanoId(),
     image:
-      "https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/Images/Bmw-7-Serie-300x225.jpg",
     title: "Company",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -18,7 +18,7 @@ const megaMenuDemo: MegamenuItem[] = [
   {
     id: ncNanoId(),
     image:
-      "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/Images/Luxe-Mercedes-V-klasse-300x225.webp",
     title: "App Name",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -29,7 +29,7 @@ const megaMenuDemo: MegamenuItem[] = [
   {
     id: ncNanoId(),
     image:
-      "https://images.pexels.com/photos/5059013/pexels-photo-5059013.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/Images/Mercedes-E-klasse-300x225.webp",
     title: "City",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -40,7 +40,7 @@ const megaMenuDemo: MegamenuItem[] = [
   {
     id: ncNanoId(),
     image:
-      "https://images.pexels.com/photos/5159141/pexels-photo-5159141.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/Images/Mercedes-S-klasse-300x225.webp",
     title: "Contruction",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -51,7 +51,7 @@ const megaMenuDemo: MegamenuItem[] = [
   {
     id: ncNanoId(),
     image:
-      "https://images.pexels.com/photos/7473041/pexels-photo-7473041.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "/Images/Tesla-Model-S-300x225.webp",
     title: "Country",
     items: __megamenu.map((i) => ({
       id: ncNanoId(),
@@ -164,123 +164,205 @@ const templatesChildrenMenus: NavItemType[] = [
 ];
 
 export const NAVIGATION_DEMO: NavItemType[] = [
-  {
-    id: ncNanoId(),
-    href: "/",
-    name: "Home",
-    type: "dropdown",
-    children: demoChildMenus,
-    isNew: true,
-  },
-  {
-    id: ncNanoId(),
-    href: "/",
-    name: "Five columns",
-    type: "megaMenu",
-    megaMenu: megaMenuDemo,
-  },
+  // {
+  //   id: ncNanoId(),
+  //   href: "/",
+  //   name: "Home",
+  //   type: "dropdown",
+  //   children: demoChildMenus,
+  //   isNew: true,
+  // },
+  // {
+  //   id: ncNanoId(),
+  //   href: "/",
+  //   name: "Five columns",
+  //   type: "megaMenu",
+  //   megaMenu: megaMenuDemo,
+  // },
   {
     id: ncNanoId(),
     href: "/listing-stay",
-    name: "Listing Page",
+    name: "Taxi",
     type: "dropdown",
     children: [
-      {
-        id: ncNanoId(),
-        href: "/listing-stay",
-        name: "Stay listings",
-        type: "dropdown",
-        children: [
-          { id: ncNanoId(), href: "/listing-stay", name: "Stay page" },
-          {
-            id: ncNanoId(),
-            href: "/listing-stay-map",
-            name: "Stay page (map)",
-          },
-          { id: ncNanoId(), href: "/listing-stay-detail", name: "Stay Detail" },
-        ],
-      },
-
-      //
-      {
-        id: ncNanoId(),
-        href: "/listing-experiences",
-        name: "Experiences listings",
-        type: "dropdown",
-        children: [
-          {
-            id: ncNanoId(),
-            href: "/listing-experiences",
-            name: "Experiences page",
-          },
-          {
-            id: ncNanoId(),
-            href: "/listing-experiences-map",
-            name: "Experiences page (map)",
-          },
-          {
-            id: ncNanoId(),
-            href: "/listing-experiences-detail",
-            name: "Experiences Detail",
-          },
-        ],
-      },
-
-      //
-      {
-        id: ncNanoId(),
-        href: "/listing-car",
-        name: "Cars listings",
-        type: "dropdown",
-        children: [
-          { id: ncNanoId(), href: "/listing-car", name: "Cars page" },
-          { id: ncNanoId(), href: "/listing-car-map", name: "Cars page (map)" },
-          { id: ncNanoId(), href: "/listing-car-detail", name: "Car Detail" },
-        ],
-      },
-
-      //
-      {
-        id: ncNanoId(),
-        href: "/listing-real-estate",
-        name: "Real Estate Listings",
-        type: "dropdown",
-        children: [
-          {
-            id: ncNanoId(),
-            href: "/listing-real-estate",
-            name: "Real Estate Listings",
-          },
-          {
-            id: ncNanoId(),
-            href: "/listing-real-estate-map",
-            name: "Real Estate Maps",
-          },
-        ],
-      },
-      //
-      {
-        id: ncNanoId(),
-        href: "/listing-flights",
-        name: "Flights listings",
-      },
+      { id: ncNanoId(), href: "/listing-stay", name: "Taxi Botlek" },
+      { id: ncNanoId(), href: "/listing-stay-map", name: "Taxi Barendrecht", },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Bergschenhoek" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Berkel en Rodenrijs" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Bleiswijk" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Capelle aan den IJssel" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Europoort" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Hoogvliet" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Krimpen aan den IJssel" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Lansingerland" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Leidschendam-Voorburg" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Maasvlakte Rotterdam" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Ridderkerk" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Schiedam" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Spijkenisse" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Rijswijk" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Vlaardingen" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Wassenaar" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Amsterdam" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Den Haag" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Kijkduin" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Taxi Delft" },
     ],
   },
   {
     id: ncNanoId(),
-    href: "/author",
-    name: "Templates",
-    type: "dropdown",
-    children: templatesChildrenMenus,
+    href: "/",
+    name: "Airport Taxi",
   },
-
   {
     id: ncNanoId(),
-    href: "/blog",
-    name: "Other pages",
-    type: "dropdown",
-    children: otherPageChildMenus,
+    href: "/",
+    name: "Zakelijk",
   },
+  {
+    id: ncNanoId(),
+    href: "/listing-stay",
+    name: "Diensten",
+    type: "dropdown",
+    children: [
+      { id: ncNanoId(), href: "/listing-stay", name: "Trouw Vervoer" },
+      { id: ncNanoId(), href: "/listing-stay-map", name: "VIP Taxi", },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Luxe Taxi" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Groepsvervoer" },
+    ],
+  },
+  {
+    id: ncNanoId(),
+    href: "/",
+    name: "Blog",
+  },
+  {
+    id: ncNanoId(),
+    href: "/listing-stay",
+    name: "Info",
+    type: "dropdown",
+    children: [
+      { id: ncNanoId(), href: "/listing-stay", name: "Trouw Vervoer" },
+      { id: ncNanoId(), href: "/listing-stay-map", name: "VIP Taxi", },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Luxe Taxi" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Groepsvervoer" },
+    ],
+  },
+  {
+    id: ncNanoId(),
+    href: "/listing-stay", 
+    icon: "/flags/nl.png", 
+    name: "Netherlands",
+    type: "dropdown",
+    children: [
+      { id: ncNanoId(), href: "/listing-stay", icon: "/flags/en.png", name: "English" },
+      { id: ncNanoId(), href: "/listing-stay-map", icon: "/flags/de.png", name: "Deutch", },
+      { id: ncNanoId(), href: "/listing-stay-detail", icon: "/flags/fr.png", name: "Francais" },
+      { id: ncNanoId(), href: "/listing-stay-detail", icon: "/flags/da.png", name: "Dansk" },
+    ],
+  },
+  // {
+  //   id: ncNanoId(),
+  //   href: "/listing-stay",
+  //   name: "Listing Page",
+  //   type: "dropdown",
+  //   children: [
+  //     {
+  //       id: ncNanoId(),
+  //       href: "/listing-stay",
+  //       name: "Stay listings",
+  //       type: "dropdown",
+  //       children: [
+  //         { id: ncNanoId(), href: "/listing-stay", name: "Stay page" },
+  //         {
+  //           id: ncNanoId(),
+  //           href: "/listing-stay-map",
+  //           name: "Stay page (map)",
+  //         },
+  //         { id: ncNanoId(), href: "/listing-stay-detail", name: "Stay Detail" },
+  //       ],
+  //     },
+
+  //     //
+  //     {
+  //       id: ncNanoId(),
+  //       href: "/listing-experiences",
+  //       name: "Experiences listings",
+  //       type: "dropdown",
+  //       children: [
+  //         {
+  //           id: ncNanoId(),
+  //           href: "/listing-experiences",
+  //           name: "Experiences page",
+  //         },
+  //         {
+  //           id: ncNanoId(),
+  //           href: "/listing-experiences-map",
+  //           name: "Experiences page (map)",
+  //         },
+  //         {
+  //           id: ncNanoId(),
+  //           href: "/listing-experiences-detail",
+  //           name: "Experiences Detail",
+  //         },
+  //       ],
+  //     },
+
+  //     //
+  //     {
+  //       id: ncNanoId(),
+  //       href: "/listing-car",
+  //       name: "Cars listings",
+  //       type: "dropdown",
+  //       children: [
+  //         { id: ncNanoId(), href: "/listing-car", name: "Cars page" },
+  //         { id: ncNanoId(), href: "/listing-car-map", name: "Cars page (map)" },
+  //         { id: ncNanoId(), href: "/listing-car-detail", name: "Car Detail" },
+  //       ],
+  //     },
+
+  //     //
+  //     {
+  //       id: ncNanoId(),
+  //       href: "/listing-real-estate",
+  //       name: "Real Estate Listings",
+  //       type: "dropdown",
+  //       children: [
+  //         {
+  //           id: ncNanoId(),
+  //           href: "/listing-real-estate",
+  //           name: "Real Estate Listings",
+  //         },
+  //         {
+  //           id: ncNanoId(),
+  //           href: "/listing-real-estate-map",
+  //           name: "Real Estate Maps",
+  //         },
+  //       ],
+  //     },
+  //     //
+  //     {
+  //       id: ncNanoId(),
+  //       href: "/listing-flights",
+  //       name: "Flights listings",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: ncNanoId(),
+  //   href: "/author",
+  //   name: "Templates",
+  //   type: "dropdown",
+  //   children: templatesChildrenMenus,
+  // },
+
+  // {
+  //   id: ncNanoId(),
+  //   href: "/blog",
+  //   name: "Other pages",
+  //   type: "dropdown",
+  //   children: otherPageChildMenus,
+  // },
 ];
 
 export const NAVIGATION_DEMO_2: NavItemType[] = [

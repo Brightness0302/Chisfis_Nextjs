@@ -21,6 +21,7 @@ export interface NavItemType {
   isNew?: boolean;
   href: PathName;
   targetBlank?: boolean;
+  icon?: string;
   children?: NavItemType[];
   megaMenu?: MegamenuItem[];
   type?: "dropdown" | "megaMenu" | "none";
@@ -157,7 +158,7 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
             >
               <Popover.Panel
                 static
-                className="sub-menu will-change-transform absolute transform z-10 w-56 top-full left-0"
+                className="sub-menu will-change-transform absolute transform z-10 w-72 top-full left-0"
               >
                 <ul className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 dark:ring-white dark:ring-opacity-10 text-sm relative bg-white dark:bg-neutral-900 py-4 grid space-y-1">
                   {menuDropdown.children?.map((i) => {
@@ -239,6 +240,9 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
         className="flex items-center font-normal text-neutral-6000 dark:text-neutral-300 py-2 px-4 rounded-md hover:text-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-neutral-200 "
         href={item.href || ""}
       >
+        {item.icon && (
+          <img src={item.icon} />
+        )}
         {item.name}
         {item.type && (
           <ChevronDownIcon
@@ -258,6 +262,9 @@ const NavigationItem: FC<NavigationItemWithRouterProps> = ({ menuItem }) => {
         className="inline-flex items-center text-sm xl:text-base font-normal text-neutral-700 dark:text-neutral-300 py-2 px-4 xl:px-5 rounded-full hover:text-neutral-900 hover:bg-neutral-100 dark:hover:bg-neutral-800 dark:hover:text-neutral-200"
         href={item.href || "/"}
       >
+        {item.icon && (
+          <img src={item.icon} />
+        )}
         {item.name}
         {item.type && (
           <ChevronDownIcon

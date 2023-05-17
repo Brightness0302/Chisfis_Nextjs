@@ -1,7 +1,19 @@
 import React from "react";
 import { TaxonomyType } from "@/data/types";
-import Header from "./(client-components)/(Header)/Header";
+import SectionHero from "./(server-components)/SectionHero";
+import SectionHowItWork from "@/components/SectionHowItWork";
+import SectionOurFeatures from "@/components/SectionOurFeatures";
 import SectionSliderNewCategories from "@/components/SectionSliderNewCategories";
+import SectionSubscribe2 from "@/components/SectionSubscribe2";
+import SectionVideos from "@/components/SectionVideos";
+
+import HIW1img from "@/images/HIW2-1.png";
+import HIW2img from "@/images/HIW2-2.png";
+import HIW3img from "@/images/HIW2-3.png";
+import HIW1imgDark from "@/images/HIW2-1-dark.png";
+import HIW2imgDark from "@/images/HIW2-2-dark.png";
+import HIW3imgDark from "@/images/HIW2-3-dark.png";
+import rightImgPng from "@/images/our-features-2.png";
 
 const DEMO_CATS_2: TaxonomyType[] = [
   {
@@ -53,10 +65,41 @@ const DEMO_CATS_2: TaxonomyType[] = [
 
 function PageHome() {
   return (
-    <div className="bg-white text-base dark:bg-neutral-900 text-neutral-900 dark:text-neutral-200">
-      <Header className={"shadow-sm dark:border-b dark:border-neutral-700 m-auto"} navType="MainNav1" />
       <main className="nc-PageHome relative overflow-hidden">
-        <div className="container relative space-y-24 mb-24 lg:space-y-28 lg:mb-28 m-auto">
+        <div className="relative">
+          {/* <img className="Hero-bgImage w-full" src={"/Images/vip-taxi.jpg"} /> */}
+          <div className="px-28">
+            <SectionHero className="pt-10 lg:pt-16 lg:pb-16" />
+          </div>
+        </div>
+        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14 bg-aliceblue dark:bg-slategrey">
+          <SectionHowItWork
+            data={[
+              {
+                id: 1,
+                img: HIW1img,
+                imgDark: HIW1imgDark,
+                title: "Smart search",
+                desc: "Name the area or type of home you are looking for the search bar. Our app will find you the perfect match.",
+              },
+              {
+                id: 2,
+                img: HIW2img,
+                imgDark: HIW2imgDark,
+                title: "Choose property",
+                desc: "From the number of options our app will provide, you can select any property that you like to explore.",
+              },
+              {
+                id: 3,
+                img: HIW3img,
+                imgDark: HIW3imgDark,
+                title: "Book you property",
+                desc: "Find a home or space from our search bar. Enter your specific location, property type and price range.",
+              },
+            ]}
+          />
+        </div>
+        <div className="px-28 relative space-y-24 mb-24 lg:space-y-14 lg:mb-14 pt-14">
           <div className="relative py-16">
             <SectionSliderNewCategories
               categories={DEMO_CATS_2}
@@ -68,8 +111,17 @@ function PageHome() {
             />
           </div>
         </div>
+        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14 bg-antiquewhite dark:bg-thistle">
+          <SectionOurFeatures />
+        </div>
+        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14">
+          <SectionVideos />
+        </div>
+        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14 bg-beige dark:bg-cadetblue">
+          <SectionSubscribe2 />
+        </div>
       </main>
-    </div>
+
   );
 }
 
