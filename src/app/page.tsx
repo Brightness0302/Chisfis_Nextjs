@@ -21,6 +21,8 @@ import GradientIconField from "@/components/GradientIconField";
 import PatternCard from "@/components/PatternCard";
 import BusinessPatternCard from "@/components/BusinessPatternCard";
 import DividerField from "@/components/DividerComponent";
+import CarCard from "@/components/CarCard";
+import IconField from "@/components/IconField";
 
 const DEMO_CATS_2: TaxonomyType[] = [
   {
@@ -79,7 +81,7 @@ function PageHome() {
             <SectionHero className="pt-10 lg:pt-16 lg:pb-16" />
           </div>
         </div>
-        <div className="container1 bg-aliceblue dark:bg-slategrey">
+        {/* <div className="container1 bg-aliceblue dark:bg-slategrey">
           <SectionHowItWork
             data={[
               {
@@ -105,7 +107,7 @@ function PageHome() {
               },
             ]}
           />
-        </div>
+        </div> */}
         <div className="px-28 relative space-y-24 mb-24 lg:space-y-14 lg:mb-14 pt-14">
           <div className="relative py-16">
             <SectionSliderNewCategories
@@ -118,7 +120,7 @@ function PageHome() {
             />
           </div>
         </div>
-        <div className="container1 bg-antiquewhite dark:bg-thistle">
+        {/* <div className="container1 bg-antiquewhite dark:bg-thistle">
           <SectionOurFeatures />
         </div>
         <div className="container1">
@@ -126,7 +128,8 @@ function PageHome() {
         </div>
         <div className="container1 bg-beige dark:bg-cadetblue">
           <SectionSubscribe2 />
-        </div>
+        </div> */}
+        <DividerField className="containerForDivider" />
         <div className="container1 bg-background dark:bg-d-background">
           <div className="grid grid-cols-3 gap-3">
             <IconCard iconType="gradient" className="" iconName="las la-search" />
@@ -156,6 +159,32 @@ function PageHome() {
             <BusinessPatternCard imageSrc="/Images/031-landing-page-150x150.png" imageAlt="Home 1" heading="Airport transport" />
             <BusinessPatternCard imageSrc="/Images/cab-150x150.png" imageAlt="Home 1" heading="Business Taxi" />
             <BusinessPatternCard imageSrc="/Images/021-red-tape-150x150.png" imageAlt="Home 1" heading="VIP Taxi" />
+          </div>
+        </div>
+        <DividerField className="containerForDivider" />
+        <div className="container1 bg-background dark:bg-d-background">
+          <div className="grid grid-cols-3 gap-3">
+            <CarCard imageSrc="/Cars/black_saloon.png" imageAlt="Car 1" heading="PRIMO Taxi Sedan">
+              <div>
+                <IconField iconName="las la-check" className="mx-3"><label className="text-base">Up to 4 Passengers</label></IconField>
+                <IconField iconName="las la-check" className="mx-3"><label className="text-base">Up to 2 Suitcases</label></IconField>
+                <IconField iconName="las la-check" className="mx-3"><label className="text-base">Free cancellation and change</label></IconField>
+              </div>
+            </CarCard>
+            <CarCard imageSrc="/Cars/black_estate.png" imageAlt="Car 1" heading="PRIMO Taxi Sedan">
+              <div>
+                <IconField iconName="las la-check" className="mx-3"><label className="text-base">Up to 4 Passengers</label></IconField>
+                <IconField iconName="las la-check" className="mx-3"><label className="text-base">Up to 6 Suitcases</label></IconField>
+                <IconField iconName="las la-check" className="mx-3"><label className="text-base">Free cancellation and change</label></IconField>
+              </div>
+            </CarCard>
+            <CarCard imageSrc="/Cars/black_8_seater-150x100.png" imageAlt="Car 1" heading="PRIMO Taxi Sedan">
+              <div>
+                <IconField iconName="las la-check" className="mx-3"><label className="text-base">Up to 8 Passengers</label></IconField>
+                <IconField iconName="las la-check" className="mx-3"><label className="text-base">Up to 8 Suitcases</label></IconField>
+                <IconField iconName="las la-check" className="mx-3"><label className="text-base">Free cancellation and change</label></IconField>
+              </div>
+            </CarCard>
           </div>
         </div>
       </main>
