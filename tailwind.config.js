@@ -40,9 +40,24 @@ module.exports = {
         "slategrey":"slategrey",
         "white-1/2":"hsla(0,0%,100%,.7)",
         "black-1/2":"hsla(0,0%,20%,.7)",
-        "d-background":"#111827"
+        "d-background":"#111827",
+        "background":"white",
+        "light-brown":"#ff9900",
       },
     },
+    fontWeight: {
+      thin: '100',
+      hairline: '100',
+      extralight: '200',
+      light: '300',
+      normal: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
+      extrabold: '800',
+      'extra-bold': '800',
+      black: '900',
+    }
   },
   plugins: [],
 }

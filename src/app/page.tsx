@@ -6,6 +6,9 @@ import SectionOurFeatures from "@/components/SectionOurFeatures";
 import SectionSliderNewCategories from "@/components/SectionSliderNewCategories";
 import SectionSubscribe2 from "@/components/SectionSubscribe2";
 import SectionVideos from "@/components/SectionVideos";
+import SectionGridFeaturePlaces from "@/components/SectionGridFeaturePlaces";
+
+import IconCard from "@/components/IconCard";
 
 import HIW1img from "@/images/HIW2-1.png";
 import HIW2img from "@/images/HIW2-2.png";
@@ -14,6 +17,8 @@ import HIW1imgDark from "@/images/HIW2-1-dark.png";
 import HIW2imgDark from "@/images/HIW2-2-dark.png";
 import HIW3imgDark from "@/images/HIW2-3-dark.png";
 import rightImgPng from "@/images/our-features-2.png";
+import GradientIconField from "@/components/GradientIconField";
+import PatternCard from "@/components/PatternCard";
 
 const DEMO_CATS_2: TaxonomyType[] = [
   {
@@ -119,6 +124,23 @@ function PageHome() {
         </div>
         <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14 bg-beige dark:bg-cadetblue">
           <SectionSubscribe2 />
+        </div>
+        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14 bg-beige">
+          <SectionGridFeaturePlaces cardType="card2" />
+        </div>
+        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14 bg-background dark:bg-d-background">
+          <div className="grid grid-cols-3 gap-3">
+            <IconCard iconType="gradient" className="" iconName="las la-search" />
+            <IconCard iconType="gradient" className="" iconName="las la-search" />
+            <IconCard iconType="gradient" className="" iconName="las la-search" />
+          </div>
+        </div>
+        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14 bg-background dark:bg-d-background">
+          <div className="grid grid-cols-3 gap-3">
+            <PatternCard imageSrc="/Images/036-taxi-150x150.png" imageAlt="Home 1" heading="PRIMO Taxi Rotterdam">
+              <p className="text-base">With <strong><span className="text-light-brown">more than 400 experienced, RTX-certified drivers and luxury vehicles</span></strong> available. Can we help you at PRIMO Taxi Rotterdam in rijnmond region.</p>
+            </PatternCard>
+          </div>
         </div>
       </main>
 
