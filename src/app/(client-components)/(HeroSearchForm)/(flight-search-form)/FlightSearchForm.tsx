@@ -215,7 +215,7 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({}) => {
 
   const renderForm = () => {
     return (
-      <form className="w-full relative mt-8 rounded-[40px] xl:rounded-[49px] rounded-t-2xl xl:rounded-t-3xl shadow-xl dark:shadow-2xl bg-white dark:bg-neutral-800">
+      <form className="w-full relative mt-0 rounded-[40px] xl:rounded-[49px] rounded-t-2xl xl:rounded-t-3xl shadow-xl dark:shadow-2xl bg-white dark:bg-neutral-800 px-12 py-6">
         {renderRadioBtn()}
         <div className="flex flex-1 rounded-full">
           <LocationInput

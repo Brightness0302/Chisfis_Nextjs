@@ -5,6 +5,7 @@ import "rc-slider/assets/index.css";
 import { Inter } from 'next/font/google'
 import Header from './(client-components)/(Header)/Header';
 import Footer from '@/components/Footer';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Header className={"shadow-sm dark:border-b dark:border-neutral-700 m-auto"} navType="MainNav1" />
         {children}
         <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   )

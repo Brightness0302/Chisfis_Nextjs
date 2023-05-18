@@ -61,3 +61,21 @@ img {
   max-width: 200px;
   max-height: 200px;
 }
+
+.scrollTotopbutton {
+  @apply fixed bottom-0 right-0 m-5 rounded-full border border-d-background dark:border-background text-2xl text-d-background dark:text-background;
+  width: 50px;
+  height: 50px;
+  /* transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  -webkit-transition: background-color .5s ease-out;
+  -o-transition: background-color .5s ease-out; */
+}
+.scrollTotopbutton:hover {
+  @apply border-background dark:border-d-background bg-d-background dark:bg-background text-background dark:text-d-background
+  ;
+  /* transition: background-color .5s ease-out;
+  -moz-transition: background-color .5s ease-out;
+  -webkit-transition: background-color .5s ease-out;
+  -o-transition: background-color .5s ease-out; */
+}
