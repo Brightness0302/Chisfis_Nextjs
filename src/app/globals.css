@@ -45,3 +45,11 @@ img {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   --tw-backdrop-blur: blur(40px);
 }
+
+.container1 {
+  @apply px-28 relative space-y-24 lg:space-y-14 pb-24 lg:pb-14 pt-14;
+}
+
+.containerForDivider {
+  @apply px-28 relative space-y-24 lg:space-y-14;
+}

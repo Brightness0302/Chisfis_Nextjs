@@ -1,7 +1,7 @@
 "use client";
 
 import { Transition } from "@headlessui/react";
-import CarCard from "@/components/CarCard";
+import CarCard from "@/components/CarCard1";
 import ExperiencesCard from "@/components/ExperiencesCard";
 import StayCard from "@/components/StayCard";
 import { CarDataType, ExperiencesDataType, StayDataType } from "@/data/types";

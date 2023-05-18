@@ -4,7 +4,7 @@ import { CarDataType } from "@/data/types";
 import Pagination from "@/shared/Pagination";
 import TabFilters from "./TabFilters";
 import Heading2 from "@/shared/Heading2";
-import CarCard from "@/components/CarCard";
+import CarCard from "@/components/CarCard1";
 
 export interface SectionGridFilterCardProps {
   className?: string;

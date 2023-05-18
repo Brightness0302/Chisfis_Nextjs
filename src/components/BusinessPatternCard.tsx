@@ -3,19 +3,17 @@
 import React, { FC } from "react";
 import Label from "./Label";
 
-export interface PatternCardProps {
+export interface BusinessPatternCardProps {
   imageSrc?: string;
   imageAlt?: string;
   heading?: string;
-  children?: React.ReactNode;
   onClick?: () => void;
 }
 
-const PatternCard: FC<PatternCardProps> = ({
+const BusinessPatternCard: FC<BusinessPatternCardProps> = ({
   imageSrc="", 
   imageAlt="", 
   heading="", 
-  children, 
   onClick = () => {},
 }) => {
     return (
@@ -23,10 +21,9 @@ const PatternCard: FC<PatternCardProps> = ({
             <div className="flex justify-center">
                 <img src={imageSrc} alt={imageAlt} className="w-24 h-24" />
             </div>
-            <Label className={"text-2xl text-center"}>{heading}</Label>
-            {children}
+            <Label className={"text-lg text-center"}>{heading}</Label>
         </div>
     );
 };
 
-export default PatternCard;
+export default BusinessPatternCard;

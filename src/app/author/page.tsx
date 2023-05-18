@@ -1,7 +1,7 @@
 "use client";
 
 import { Tab } from "@headlessui/react";
-import CarCard from "@/components/CarCard";
+import CarCard from "@/components/CarCard1";
 import CommentListing from "@/components/CommentListing";
 import ExperiencesCard from "@/components/ExperiencesCard";
 import StartRating from "@/components/StartRating";

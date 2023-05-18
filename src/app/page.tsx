@@ -19,6 +19,8 @@ import HIW3imgDark from "@/images/HIW2-3-dark.png";
 import rightImgPng from "@/images/our-features-2.png";
 import GradientIconField from "@/components/GradientIconField";
 import PatternCard from "@/components/PatternCard";
+import BusinessPatternCard from "@/components/BusinessPatternCard";
+import DividerField from "@/components/DividerComponent";
 
 const DEMO_CATS_2: TaxonomyType[] = [
   {
@@ -77,7 +79,7 @@ function PageHome() {
             <SectionHero className="pt-10 lg:pt-16 lg:pb-16" />
           </div>
         </div>
-        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14 bg-aliceblue dark:bg-slategrey">
+        <div className="container1 bg-aliceblue dark:bg-slategrey">
           <SectionHowItWork
             data={[
               {
@@ -116,30 +118,44 @@ function PageHome() {
             />
           </div>
         </div>
-        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14 bg-antiquewhite dark:bg-thistle">
+        <div className="container1 bg-antiquewhite dark:bg-thistle">
           <SectionOurFeatures />
         </div>
-        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14">
+        <div className="container1">
           <SectionVideos />
         </div>
-        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14 bg-beige dark:bg-cadetblue">
+        <div className="container1 bg-beige dark:bg-cadetblue">
           <SectionSubscribe2 />
         </div>
-        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14 bg-beige">
-          <SectionGridFeaturePlaces cardType="card2" />
-        </div>
-        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14 bg-background dark:bg-d-background">
+        <div className="container1 bg-background dark:bg-d-background">
           <div className="grid grid-cols-3 gap-3">
             <IconCard iconType="gradient" className="" iconName="las la-search" />
-            <IconCard iconType="gradient" className="" iconName="las la-search" />
-            <IconCard iconType="gradient" className="" iconName="las la-search" />
+            <IconCard iconType="gradient" className="" iconName="las la-mask" />
+            <IconCard iconType="gradient" className="" iconName="las la-magic" />
           </div>
         </div>
-        <div className="px-28 relative space-y-24 pb-24 lg:space-y-14 lg:pb-14 pt-14 bg-background dark:bg-d-background">
+        <DividerField className="containerForDivider" />
+        <div className="container1 bg-background dark:bg-d-background">
           <div className="grid grid-cols-3 gap-3">
-            <PatternCard imageSrc="/Images/036-taxi-150x150.png" imageAlt="Home 1" heading="PRIMO Taxi Rotterdam">
-              <p className="text-base">With <strong><span className="text-light-brown">more than 400 experienced, RTX-certified drivers and luxury vehicles</span></strong> available. Can we help you at PRIMO Taxi Rotterdam in rijnmond region.</p>
+            <PatternCard imageSrc="/Images/016-taxi-150x150.png" imageAlt="Home 1" heading="PRIMO Taxi Rotterdam">
+              <p className="text-base text-justify">With <strong><span className="text-light-brown">more than 400 experienced, RTX-certified drivers and luxury vehicles</span></strong> available. Can we help you at PRIMO Taxi Rotterdam in rijnmond region.</p>
             </PatternCard>
+            <PatternCard imageSrc="/Images/035-take-off-150x150.png" imageAlt="Home 1" heading="PRIMO Taxi Rotterdam">
+              <p className="text-base text-justify">With PRIMO Airport Taxi Privé you are <strong><span className="text-light-brown">assured of a good trip to the airport</span></strong> of your choice. Experience the best taxi service and quality at PRIMO Airport Taxi Services.</p>
+            </PatternCard>
+            <PatternCard imageSrc="/Images/012-briefcase-1-150x150.png" imageAlt="Home 1" heading="PRIMO Taxi Rotterdam">
+              <p className="text-base text-justify">At PRIMO Zakelijk Taxi Rotterdam it is important to provide transport services with a <strong><span className="text-light-brown">suitable appearance, quality and punctuality.</span></strong><br/>PRIMO Taxi Business guarantees you this.</p>
+            </PatternCard>
+          </div>
+        </div>
+        <DividerField className="containerForDivider" />
+        <div className="container1 bg-background dark:bg-d-background">
+          <div className="grid grid-cols-5 gap-3">
+            <BusinessPatternCard imageSrc="/Images/036-taxi-150x150.png" imageAlt="Home 1" heading="Taxi transport" />
+            <BusinessPatternCard imageSrc="/Images/023-customer-150x150.png" imageAlt="Home 1" heading="Group transport" />
+            <BusinessPatternCard imageSrc="/Images/031-landing-page-150x150.png" imageAlt="Home 1" heading="Airport transport" />
+            <BusinessPatternCard imageSrc="/Images/cab-150x150.png" imageAlt="Home 1" heading="Business Taxi" />
+            <BusinessPatternCard imageSrc="/Images/021-red-tape-150x150.png" imageAlt="Home 1" heading="VIP Taxi" />
           </div>
         </div>
       </main>
