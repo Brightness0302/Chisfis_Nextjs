@@ -26,40 +26,20 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
-.Hero-bgImage {
-  position: absolute !important;
+.nc-header-bg {
+  @apply bg-white/70 dark:bg-neutral-900/60 backdrop-blur-2xl backdrop-filter;
+}
+
+.dark {
+  @apply bg-d-background;
+}
+
+.containerForDivider {
+  @apply px-28 relative space-y-24 lg:space-y-14 w-full py-32;
 }
 
 img {
   position: relative !important;
-}
-
-.container {
-  max-width: 1536px;
-  padding-right: 128px;
-  padding-left: 128px;
-
-  width: 100%;
-}
-.nc-Header {
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  --tw-backdrop-blur: blur(40px);
-}
-
-.container1 {
-  @apply px-28 relative space-y-24 lg:space-y-14 pb-24 lg:pb-14 pt-14;
-}
-
-.containerForDivider {
-  @apply px-28 relative space-y-24 lg:space-y-14;
-}
-
-.carimageContainer {
-  min-width: 100px;
-  min-height: 100px;
-
-  max-width: 200px;
-  max-height: 200px;
 }
 
 .scrollTotopbutton {
@@ -72,10 +52,62 @@ img {
   -o-transition: background-color .5s ease-out; */
 }
 .scrollTotopbutton:hover {
-  @apply border-background dark:border-d-background bg-d-background dark:bg-background text-background dark:text-d-background
+  @apply border-background dark:border-d-background bg-d-background dark:bg-background text-background dark:text-d-background;
   ;
   /* transition: background-color .5s ease-out;
   -moz-transition: background-color .5s ease-out;
   -webkit-transition: background-color .5s ease-out;
   -o-transition: background-color .5s ease-out; */
+}
+
+.backgroundButton:hover {
+  @apply bg-neutral-100 dark:bg-neutral-800;
+}
+
+.d-backgroundButton:hover {
+  @apply bg-neutral-600 dark:bg-neutral-300;
+}
+
+.gradient-image {
+  width: 100%;
+  height: 100%;
+  --gradient-image-url-dark:url(https://images.ctfassets.net/e5382hct74si/5RJZ0Nk5TjMNANRbNT45QD/fd02cfb50f118b444e7f2f7a4fcafe7e/KV-Dark-Bitmotif.svg);
+  --gradient-image-url-light:url(https://images.ctfassets.net/e5382hct74si/7vW9pH8OApAhL1vW1Z1FrO/b640d41d2b27b21bd0da41738918a88e/KV-Light-Bitmotif.svg);
+
+  /* position: absolute; */
+  inset: 0;
+  background-image: var(--gradient-image-url);
+  background-repeat: repeat-x;
+  background-position: top;
+
+  --gradient-image-height-dark: 356px;
+  --gradient-image-height-light: 356px;
+  --gradient-image-width-dark: 1595px;
+  --gradient-image-width-light: 1595px;
+
+}
+
+.gradient-image-dark {
+  --grid-background-color-dark: #251111;
+  --grid-background-color: var(--grid-background-color-dark);
+  --gradient-image-url: var(--gradient-image-url-dark);
+}
+
+.gradient-image-light {
+  --grid-background-color-light: #FFF5F1;
+  --grid-background-color: var(--grid-background-color-light);
+  --gradient-image-url: var(--gradient-image-url-light);
+}
+
+.mainPage {
+  background-image: url("/Images/luxe-taxi-amstelveen.jpeg");
+  background-size: cover;
+}
+
+.firstSection {
+  background-color: rgba(209,213,219,0.6);
+}
+
+.container1 {
+  @apply px-6 md:px-32 items-center w-full;
 }
